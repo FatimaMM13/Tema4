@@ -14,7 +14,7 @@ echo "----------------------------------------------"
 echo "             1.Mayor o menor de edad     "
 echo "             2.Ficheros vacíos "
 echo "             3.Números iguales  "
-echo "             4.Archivos y ficheros"
+echo "             4.Números dobles"
 echo "             5.Números positivos y negativos"
 echo "             6.Salir             "
 echo "---------------------------------------------"
@@ -76,18 +76,22 @@ do
         fi
     }
 
-    #Script Opción 4: Archivos y ficheros
+    #Script Opción 4: Números dobles
     function opcion4(){
-        read -p "Introduce la ruta: " ruta
-        for file in $ruta
-    do
-        if [ -d $file ]
-        then
-            echo $file es un directorio
-        else
-            echo $file es un archivo
-        fi
-    done
+        read -p "Inserta un número: " numero
+        until [ $numero -eq 0 ]; do
+
+        let numero=numero*2
+        echo «El doble es $numero.»
+        read -p "¿Quieres doblar? " respuesta
+
+            if [ $respuesta = "no" ] || [ $respuesta = "NO" ]; then
+                numero=0
+
+            else
+                echo "Interpretaremos que has dicho que sí …"
+            fi
+        done
     }
 
     #Script Opción 5: Números positivos y negativos
