@@ -11,12 +11,12 @@ echo "                 MENÚ BASH                     "
 echo "- - - - - - - - - - - - - - - - - - - - - - - -"
 echo "**********************************************"
 echo "----------------------------------------------"
-echo "       1.Nombre y edad     "
-echo "       2.Ficheros vacíos "
-echo "       3.Números iguales  "
-echo "       4.Archivos y ficheros"
-echo "       5.Números positivos y negativos"
-echo "       6.Salir             "
+echo "             1.Nombre y edad     "
+echo "             2.Ficheros vacíos "
+echo "             3.Números iguales  "
+echo "             4.Archivos y ficheros"
+echo "             5.Números positivos y negativos"
+echo "             6.Salir             "
 echo "---------------------------------------------"
 echo "*********************************************"
 echo "- - - - - Bienvenid@ al menú bash - - - - - -"
@@ -142,7 +142,7 @@ do
         read -p "Por favor selecione una opción: " opcion
         echo "- - - Ha escogido la opción $opcion - - - -"
     fi
-    
+
     #Aqui es en caso de que la persona seleccione la opción de salir
     # para salir del menú bash
     if (($opcion == 6 ))
