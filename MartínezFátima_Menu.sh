@@ -81,9 +81,10 @@ do
         read -p "Inserta un número: " numero
         until [ $numero -eq 0 ]; do
             let numero=numero*2
-            echo «El doble es $numero.»
+            echo "El doble es $numero."
             read -p "¿Quieres doblar? " respuesta
-            if [ $respuesta = "no" ] || [ $respuesta = "NO" ]; then
+            if [ $respuesta = "no" ] || [ $respuesta = "NO" ]
+            then
                 numero=0
             else
                 echo "Interpretaremos que has dicho que sí …"
