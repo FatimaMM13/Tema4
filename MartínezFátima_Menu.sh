@@ -11,7 +11,7 @@ echo "                 MENÚ BASH                     "
 echo "- - - - - - - - - - - - - - - - - - - - - - - -"
 echo "**********************************************"
 echo "----------------------------------------------"
-echo "             1.Nombre y edad     "
+echo "             1.Mayor o menor de edad     "
 echo "             2.Ficheros vacíos "
 echo "             3.Números iguales  "
 echo "             4.Archivos y ficheros"
@@ -32,7 +32,7 @@ while (($opcion != 6))
 do 
     #Aqui configuramos el valor de las opciones,es decir,los scripts de cada opción
 
-    #Script Opción 1: Nombre y edad 
+    #Script Opción 1: Mayor o menor de edad 
     function opcion1(){
         read -p "Introduce tu edad: " idade
         if [ $idade -ge 18 ]
